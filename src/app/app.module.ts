@@ -10,6 +10,10 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { PropriedadePage } from '../pages/propriedade/propriedade';
+import { CultivoPage } from '../pages/cultivo/cultivo';
+import { IrrigacaoPage } from '../pages/irrigacao/irrigacao';
+import { AcompanharIrrigacaoPage } from '../pages/acompanhar-irrigacao/acompanhar-irrigacao';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
+    PropriedadePage,
+    CultivoPage,
+    IrrigacaoPage,
+    AcompanharIrrigacaoPage,
     TabsPage
   ],
   imports: [
@@ -29,6 +37,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
+    PropriedadePage,
+    CultivoPage,
+    IrrigacaoPage,
+    AcompanharIrrigacaoPage,
     TabsPage
   ],
   providers: [
