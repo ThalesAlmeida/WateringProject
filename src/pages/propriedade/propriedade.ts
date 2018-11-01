@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, Button } from 'ionic-angular';
+
 
 /**
  * Generated class for the PropriedadePage page.
@@ -15,11 +16,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PropriedadePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public alertCtrl:AlertController, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PropriedadePage');
+  }
+
+  public showAlertEquipamento():void{
+    const alert = this.alertCtrl.create({
+      title: 'Adicionar equipamento',
+      subTitle: 'Você precisa informar dados sobre o seu equipamento',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
 }

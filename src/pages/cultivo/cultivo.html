@@ -15,4 +15,28 @@
 
 <ion-content padding>
 
+    <ion-item>
+        <ion-label>Selecione o cultivo</ion-label>
+        <ion-select [(ngModel)]="cultivo">
+          <ion-option value="milho">Milho</ion-option>
+          <ion-option value="arroz">Arroz</ion-option>
+          <ion-option value="feijao">Feijão</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-label>Data da semeadura</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Selecione a propriedade</ion-label>
+            <ion-select [(ngModel)]="propriedade">
+              <ion-option value="plantio_1">Plantio I</ion-option>
+              <ion-option value="plantio_2">Plantio II</ion-option>
+              <ion-option value="meu_plantio">Meu plantio</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <button class="button" ion-button>Salvar</button>
+
 </ion-content>

@@ -35,14 +35,14 @@
     </ion-item>
     <ion-item>
       <ion-label>Equipamento</ion-label>
-      <ion-select [(ngModel)]="gaming">
-        <ion-option value="nes">Aspersão</ion-option>
-        <ion-option value="n64">MicroAspersão</ion-option>
-        <ion-option value="ps">Gotejamento</ion-option>
+      <ion-select [(ngModel)]="Equipamento">
+        <ion-option value="aspersao">Aspersão</ion-option>
+        <ion-option value="microaspersao">MicroAspersão</ion-option>
+        <ion-option value="gotejamento">Gotejamento</ion-option>
       </ion-select>
     </ion-item>
 
   </ion-list>
-
+  <button (click)="showAlertEquipamento()" class="button" ion-button>Salvar</button>
 
 </ion-content>
