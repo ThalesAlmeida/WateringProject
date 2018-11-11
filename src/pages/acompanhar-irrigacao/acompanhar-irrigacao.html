@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Acompanhar</ion-title>
+    <ion-title>Acompanhar sua irrigação</ion-title>
     <button menuToggle="">
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -17,5 +17,28 @@
 
 
 <ion-content padding>
+
+    <ion-item>
+        <ion-label>Selecione a propriedade</ion-label>
+        <ion-select [(ngModel)]="Propriedade">
+          <ion-option value="propriedade1">Propriedade do João</ion-option>
+          <ion-option value="propriedade2">Terreno 2</ion-option>
+          <ion-option value="propriedade3">Terra</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Selecione o cultivo</ion-label>
+          <ion-select [(ngModel)]="Cultivo">
+            <ion-option value="propriedade1">Cultivo 1</ion-option>
+            <ion-option value="propriedade2">Cultivo 2</ion-option>
+            <ion-option value="propriedade3">Milho</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <button ion-button small>
+            Visualizar relatório
+            <ion-icon name="ios-eye"></ion-icon>
+          </button>
 
 </ion-content>

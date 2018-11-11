@@ -2,19 +2,19 @@
   <ion-navbar>
     <ion-title>Home</ion-title>
     <button menuToggle="">
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon icon-start name="menu"></ion-icon>
     </button>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Selecione o que deseja fazer</h2>
+  <!-- <h2>Selecione o que deseja fazer</h2> -->
   <div>
     <div>
-      <a (click)="goToPropriedade()">Cadastrar propriedade</a>
-      <a (click)="goToCultivo()">Cadastrar cultivo</a>
-      <a (click)="goToIrrigacao()">Cadastrar irrigação</a>
-      <a (click)="goToAcompanharIrrigacao()">Acompanhar irrigação</a>
+      <button ion-button full (click)="goToPropriedade()">Cadastrar propriedade</button>
+      <button ion-button full (click)="goToCultivo()">Cadastrar cultivo</button>
+      <button ion-button full (click)="goToIrrigacao()">Irrigação</button>
+      <button ion-button full (click)="goToAcompanharIrrigacao()">Acompanhar irrigação</button>
     </div>
   </div>
 </ion-content>
