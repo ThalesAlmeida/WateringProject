@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
  * Generated class for the CultivoPage page.
  *
@@ -20,6 +20,10 @@ export class CultivoPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CultivoPage');
+  }
+
+  public goToHome():void{
+    this.navCtrl.push(HomePage)
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the IrrigacaoPage page.
@@ -20,6 +21,10 @@ export class IrrigacaoPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad IrrigacaoPage');
+  }
+
+  public goToHome():void{
+    this.navCtrl.push(HomePage)
   }
 
 }
