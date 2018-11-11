@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController, Button } from 'ionic-angular';
+import { EquipamentoPage } from '../equipamento/equipamento';
 
 
 /**
@@ -27,7 +28,14 @@ export class PropriedadePage {
     const alert = this.alertCtrl.create({
       title: 'Adicionar equipamento',
       subTitle: 'Você precisa informar dados sobre o seu equipamento',
-      buttons: ['OK']
+      buttons: [
+          {
+            text: 'Ok',
+            handler:()=>{
+              this.navCtrl.push(EquipamentoPage)
+            }
+          }
+      ]
     });
     alert.present();
   }

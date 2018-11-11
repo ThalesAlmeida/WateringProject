@@ -14,6 +14,7 @@ import { PropriedadePage } from '../pages/propriedade/propriedade';
 import { CultivoPage } from '../pages/cultivo/cultivo';
 import { IrrigacaoPage } from '../pages/irrigacao/irrigacao';
 import { AcompanharIrrigacaoPage } from '../pages/acompanhar-irrigacao/acompanhar-irrigacao';
+import { EquipamentoPage } from '../pages/equipamento/equipamento';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AcompanharIrrigacaoPage } from '../pages/acompanhar-irrigacao/acompanha
     CultivoPage,
     IrrigacaoPage,
     AcompanharIrrigacaoPage,
+    EquipamentoPage,
     TabsPage
   ],
   imports: [
@@ -41,6 +43,7 @@ import { AcompanharIrrigacaoPage } from '../pages/acompanhar-irrigacao/acompanha
     CultivoPage,
     IrrigacaoPage,
     AcompanharIrrigacaoPage,
+    EquipamentoPage,
     TabsPage
   ],
   providers: [
